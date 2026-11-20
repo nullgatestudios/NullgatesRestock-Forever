@@ -46,6 +46,7 @@ If a purchase would break a limit, the addon buys what fits and asks you about t
 | `/nrestock` or `/restock` | Open the shopping list and settings. |
 | `/nrestock add <item link> <amount>` | Add an item to your list. |
 | `/nrestock pause` | Stop offering purchases until you turn it back on. |
+| `/nrestock check` | Test what the addon needs in your game client and save the results. |
 
 ---
 
