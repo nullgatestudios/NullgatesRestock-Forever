@@ -81,6 +81,8 @@ local function Build()
     frame = CreateFrame("Frame", "NullgatesRestockWindow", UIParent, "BasicFrameTemplateWithInset")
     frame:SetSize(400, 56 + ROWS * ROW_HEIGHT + 70)
     frame:SetPoint("CENTER")
+    frame:SetFrameStrata("DIALOG") -- above unit frames, nameplates and bags
+    frame:SetToplevel(true)
     frame:SetMovable(true)
     frame:EnableMouse(true)
     frame:EnableMouseWheel(true)

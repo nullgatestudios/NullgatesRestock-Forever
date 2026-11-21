@@ -160,6 +160,8 @@ local function OwnWindow()
         window = CreateFrame("Frame", "NullgatesRestockOptions", UIParent, "BasicFrameTemplateWithInset")
         window:SetSize(380, 520)
         window:SetPoint("CENTER")
+        window:SetFrameStrata("DIALOG") -- above unit frames, nameplates and bags
+        window:SetToplevel(true)
         window:SetMovable(true)
         window:EnableMouse(true)
         window:SetClampedToScreen(true)
