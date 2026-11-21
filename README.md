@@ -1,6 +1,6 @@
 # Nullgate's Restock - Forever
 
-> **Status: planning.** No code yet. See [PLAN.md](PLAN.md).
+> **Status: beta** (1.0.0-beta.1). Looking for testers of every class. See [CHANGELOG.md](CHANGELOG.md).
 
 **Nullgate's Restock** keeps your reagents, ammo, poison ingredients and pet food topped up in **World of Warcraft: Forever**. Set how many of each item you want to carry. When you open a vendor who sells them, the addon offers to buy what you're missing.
 
@@ -10,7 +10,7 @@ It works for every class, and each class starts with a suggested list you can ed
 
 ## How It Works
 
-1. **Build your list**: drag an item onto the list, or Shift-click it in a vendor's window, and set how many to keep.
+1. **Build your list**: drag an item onto the list, or Alt-click it in a vendor's window, and set how many to keep.
 2. **Open a vendor.** The addon works out what that vendor sells from your list and how many you need.
 3. **Confirm the purchase**: *"Buy 200 Jagged Arrows and 10 Symbol of Kings for 1g 45s?"* Nothing is bought until you say yes.
 
@@ -43,9 +43,12 @@ If a purchase would break a limit, the addon buys what fits and asks you about t
 
 | Command | Action |
 | :--- | :--- |
-| `/nrestock` or `/restock` | Open the shopping list and settings. |
-| `/nrestock add <item link> <amount>` | Add an item to your list. |
+| `/nrestock` or `/restock` | Open the shopping list. |
+| `/nrestock add <item link> <amount>` | Add an item to your list (the amount is optional). |
+| `/nrestock remove <item link>` | Remove an item from your list. |
+| `/nrestock suggest` | Add the suggested items for your class and level. |
 | `/nrestock pause` | Stop offering purchases until you turn it back on. |
+| `/nrestock config` | Open the settings. |
 | `/nrestock check` | Test what the addon needs in your game client and save the results. |
 
 ---
@@ -64,6 +67,18 @@ Not released yet. Once it is:
 
 - **Nullgate's Addon Config**: one settings hub and profile manager for the whole suite.
 - **Nullgate's Food & Water**, **Pet & Ammo**, **Poisons**, **Shards & Stones**, **Quest Tracker** and more.
+
+---
+
+## Development
+
+| Task | Command |
+| :--- | :--- |
+| Refresh the suggested lists after a client patch | `python tools/generate_starter_lists.py` (reads the latest Forever build from wago.tools) |
+| Run the tests | `lua tests/run.lua`, `lua tests/smoke.lua` and `lua tests/locales.lua` |
+| Build `zips/NullgatesRestock-Forever-<version>.zip` | `.\package.ps1` (or `.\package.ps1 -Version 1.0.0` to set the version first) |
+
+Publishing a GitHub release uploads that version to CurseForge (`.github/workflows/curseforge.yml`); pushes only run the tests.
 
 ---
 

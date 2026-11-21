@@ -10,7 +10,7 @@ No more arriving at the raid without candles, running out of teleport runes in t
 
 - **Shopping list for each character**: every item with the amount you want to carry. Optionally counts what's in your bank, from your last bank visit.
 - **Suggested lists for every class**: teleport and portal runes, candles, symbols, ankhs, seeds, vials and poison ingredients, ammo for your ranged weapon and food for your pet's diet. Use them, change them or start empty.
-- **Easy to add items**: drag an item onto the list, or Shift-click it in a vendor's window.
+- **Easy to add items**: drag an item onto the list, or Alt-click it in a vendor's window.
 - **Confirmation before every purchase**, listing each item and the total cost.
 - **Spending limits**: a maximum to spend per vendor visit and a minimum amount of gold to always keep.
 - **Respects stack sizes and vendors with limited stock.**
@@ -42,9 +42,12 @@ Until one is set, the confirmation stays on. If you later clear both limits, it 
 
 | Command | Action |
 | :--- | :--- |
-| `/nrestock` or `/restock` | Open the shopping list and settings. |
-| `/nrestock add <item link> <amount>` | Add an item to your list. |
+| `/nrestock` or `/restock` | Open the shopping list. |
+| `/nrestock add <item link> <amount>` | Add an item to your list (the amount is optional). |
+| `/nrestock remove <item link>` | Remove an item from your list. |
+| `/nrestock suggest` | Add the suggested items for your class and level. |
 | `/nrestock pause` | Stop offering purchases until you turn it back on. |
+| `/nrestock config` | Open the settings. |
 | `/nrestock check` | Test what the addon needs in your game client and save the results (for bug reports). |
 
 ---

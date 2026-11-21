@@ -1,6 +1,6 @@
 # Nullgate's Restock - Forever: Plan
 
-Status: planning, with no code written yet. Planned on 2026-11-20.
+Status: phases 0 to 4 built as 1.0.0-beta.1 on 2026-11-20; the in-game checks wait for testers (`/nrestock check`). Planned on 2026-11-20.
 
 - **Folder:** `NullgatesRestock-Forever`
 - **Saved variables:** `NullgatesRestockDB` (per character)
@@ -39,7 +39,7 @@ Buying from vendors (`BuyMerchantItem`) is not protected, so there are no secure
 ## Phase 2: List editor
 
 - Window listing items, amounts and current counts.
-- Drag an item to add it; Shift-click an item in a vendor's window to add it; `/nrestock add`.
+- Drag an item to add it; Alt-click an item in a vendor's window to add it (Shift-click already opens the game's stack purchase); `/nrestock add`.
 
 ## Phase 3: Class lists and bank counts
 
