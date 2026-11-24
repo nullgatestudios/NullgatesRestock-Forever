@@ -269,6 +269,12 @@ SlashCmdList.NULLGATESRESTOCK("config")
 OK(NullgatesRestockOptions and NullgatesRestockOptions.shown, "/nrestock config opens the settings")
 OpenVendor(STOCK)
 SlashCmdList.NULLGATESRESTOCK("check")
+do -- the report window every Nullgate addon shares
+    local w = NullgateReportWindow
+    OK(w and w.shown and w.url == "https://nullgatestudios.com/report?addon=restock", "check opens the shared report window with this addon's link")
+    OK(w and w.text and w.text:find("Addon: restock\nNullgate's Restock - Forever ", 1, true) == 1, "the report starts with the addon's slug and name")
+    OK(w and w.box.text == w.text and w.link.text == w.url, "the report and the link are in the window, ready to copy")
+end
 local log = table.concat(db.check or {}, "\n")
 OK(log:find("BuyMerchantItem=yes", 1, true) and log:find("GetMerchantItemInfo=yes", 1, true), "check reports which calls exist")
 OK(log:find("vendor 4: id 11285 Jagged Arrow, price 1000, bundle 200", 1, true), "check lists what the vendor sells")

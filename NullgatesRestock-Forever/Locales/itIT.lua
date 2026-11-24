@@ -2,6 +2,10 @@
 local _, ns = ...
 
 ns.RegisterLanguagePack("itIT", "Italiano", {
+    ["Bug report"] = "Segnalazione bug",
+    ["Select all"] = "Seleziona tutto",
+    ["Press Ctrl+C to copy this report, then paste it into a new report at the link below, with a few words on what happened."] = "Premi Ctrl+C per copiare questo rapporto, poi incollalo in una nuova segnalazione al link qui sotto, con due parole su cosa è successo.",
+    ["Select link"] = "Seleziona link",
     ["Add suggested items"] = "Aggiungi oggetti suggeriti",
     ["Added %d items to your restock list."] = "Aggiunti %d oggetti alla tua lista della spesa.",
     ["Always keep at least"] = "Tieni sempre almeno",

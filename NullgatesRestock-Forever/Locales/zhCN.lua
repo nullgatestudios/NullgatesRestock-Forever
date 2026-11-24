@@ -2,6 +2,10 @@
 local _, ns = ...
 
 ns.RegisterLanguagePack("zhCN", "简体中文", {
+    ["Bug report"] = "错误报告",
+    ["Select all"] = "全选",
+    ["Press Ctrl+C to copy this report, then paste it into a new report at the link below, with a few words on what happened."] = "按 Ctrl+C 复制这份报告，然后在下方链接中新建报告并粘贴，再简单说明发生了什么。",
+    ["Select link"] = "选中链接",
     ["Add suggested items"] = "添加推荐物品",
     ["Added %d items to your restock list."] = "已向补货清单添加 %d 件物品。",
     ["Always keep at least"] = "始终至少保留",

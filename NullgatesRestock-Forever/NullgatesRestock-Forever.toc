@@ -2,7 +2,7 @@
 ## Title: |cff00c0ffNullgate's Restock|r - |cffffd100Forever|r
 ## Notes: Keep reagents, ammo and supplies topped up: set how many to carry, confirm the purchase at the vendor.
 ## Author: Nullgate Studios
-## Version: 1.0.0-beta.1
+## Version: 1.0.0-beta.2
 ## IconTexture: Interface\Icons\INV_Misc_Bag_10
 ## SavedVariablesPerCharacter: NullgatesRestockDB
 ## OptionalDeps: NullgatesAddonConfig-Forever
@@ -27,5 +27,6 @@ Merchant.lua
 Restock.lua
 Window.lua
 Options.lua
+NullgateReport.lua
 Check.lua
 Core.lua

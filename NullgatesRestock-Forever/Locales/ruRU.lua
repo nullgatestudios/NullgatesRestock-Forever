@@ -2,6 +2,10 @@
 local _, ns = ...
 
 ns.RegisterLanguagePack("ruRU", "Русский", {
+    ["Bug report"] = "Отчёт об ошибке",
+    ["Select all"] = "Выделить всё",
+    ["Press Ctrl+C to copy this report, then paste it into a new report at the link below, with a few words on what happened."] = "Нажмите Ctrl+C, чтобы скопировать этот отчёт, затем вставьте его в новый отчёт по ссылке ниже и коротко опишите, что произошло.",
+    ["Select link"] = "Выделить ссылку",
     ["Add suggested items"] = "Добавить рекомендуемые предметы",
     ["Added %d items to your restock list."] = "В список покупок добавлено предметов: %d.",
     ["Always keep at least"] = "Всегда оставлять не меньше",
